@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "waku dev",
     "build": "waku build",
-    "start": "waku start"
+    "start": "waku start",
+    "yagasaki": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
     "react": "18.3.0-canary-670811593-20240322",
