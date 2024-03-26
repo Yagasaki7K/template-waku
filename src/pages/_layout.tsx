@@ -4,6 +4,7 @@ import type { ReactNode } from 'react';
 
 import { Header } from '../components/header.js';
 import { Footer } from '../components/footer.js';
+import { Toaster } from 'sonner';
 
 type RootLayoutProps = { children: ReactNode };
 
@@ -14,6 +15,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <div>
             <meta property="description" content={data.description} />
             <link rel="icon" type="image/png" href={data.icon} />
+            <Toaster richColors position="top-right" />
             <Header />
             <main>
                 {children}
